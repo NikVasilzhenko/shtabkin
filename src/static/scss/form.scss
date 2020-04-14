@@ -1,0 +1,38 @@
+.form{
+  padding: 48px;
+  box-shadow: $shd-main;
+  background-color: $clr-white;
+  &__title{
+    font-size: 22px;
+    line-height: 1;
+    color: $clr-title;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  &__txt{
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $clr-grey-dark;
+  }
+  .label{margin-bottom: 24px;}
+  &__submit{
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  @media only screen and (max-width : 1023px){
+    padding: 32px 16px 16px;
+    &__footer{
+      @include flex-start-between;
+      flex-direction: row-reverse;
+      & > *{width: calc(50% - 8px);}
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__footer{
+      display: block;
+      & > *{width: 100%;}
+    }
+    &__submit{font-size: 16px;}
+  }
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .prefix__cls-2,.prefix__cls-5{fill:none;stroke:#2b3b54;stroke-linecap:round;stroke-width:1.4px}.prefix__cls-2{stroke-miterlimit:10}.prefix__cls-3{fill:#2b3b54}.prefix__cls-5{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="prefix__Group_6652" data-name="Group 6652" transform="translate(-63.822 -576.061)">
+        <path id="prefix__Rectangle_7538" d="M0 0H72V72H0z" data-name="Rectangle 7538" transform="translate(63.822 576.061)" style="opacity:0;fill:#d9e9f3"/>
+        <g id="prefix__Group_6631" data-name="Group 6631" transform="translate(122.13 588.371)">
+            <path id="prefix__Line_133" d="M0 2.999L0 0" class="prefix__cls-2" data-name="Line 133" transform="translate(1.499)"/>
+            <path id="prefix__Line_134" d="M0 0L2.999 0" class="prefix__cls-2" data-name="Line 134" transform="translate(0 1.499)"/>
+        </g>
+        <g id="prefix__Group_6632" data-name="Group 6632" transform="translate(72.008 638.909)">
+            <path id="prefix__Line_135" d="M0 2.999L0 0" class="prefix__cls-2" data-name="Line 135" transform="translate(1.499)"/>
+            <path id="prefix__Line_136" d="M0 0L2.999 0" class="prefix__cls-2" data-name="Line 136" transform="translate(0 1.499)"/>
+        </g>
+        <g id="prefix__Group_6633" data-name="Group 6633" transform="translate(98.727 630.875)">
+            <path id="prefix__Line_137" d="M0 2.999L0 0" class="prefix__cls-2" data-name="Line 137" transform="translate(1.499)"/>
+            <path id="prefix__Line_138" d="M0 0L2.999 0" class="prefix__cls-2" data-name="Line 138" transform="translate(0 1.499)"/>
+        </g>
+        <circle id="prefix__Ellipse_103" cx=".89" cy=".89" r=".89" class="prefix__cls-3" data-name="Ellipse 103" transform="translate(129.413 629.113)"/>
+        <circle id="prefix__Ellipse_104" cx=".89" cy=".89" r=".89" class="prefix__cls-3" data-name="Ellipse 104" transform="translate(72.618 583.962)"/>
+        <circle id="prefix__Ellipse_105" cx="21.287" cy="21.287" r="21.287" data-name="Ellipse 105" transform="translate(82.11 599.68)" style="fill:#d9e9f3"/>
+        <g id="prefix__Group_6634" data-name="Group 6634" transform="translate(71.743 589.188)">
+            <path id="prefix__Path_736" d="M95.287 618.477l2.347-2.347 3.717 3.717 1.309-1.309-1.837-7.2-5.894.062-4.368 4.368-.062 5.895 7.257 1.777L99 622.194z" class="prefix__cls-5" data-name="Path 736" transform="translate(-74.41 -592.859)"/>
+            <path id="prefix__Path_737" d="M79.995 598.5l-2.347 2.347-3.717-3.717-1.309 1.309 1.837 7.2 5.894-.062 4.368-4.368.062-5.894-7.257-1.777-1.249 1.249z" class="prefix__cls-5" data-name="Path 737" transform="translate(-72.623 -591.078)"/>
+            <path id="prefix__Rectangle_7539" d="M0 0H11.905V6.178H0z" class="prefix__cls-5" data-name="Rectangle 7539" transform="rotate(45 -6.173 19.669)"/>
+            <path id="prefix__Path_738" d="M86.529 590.8a3.426 3.426 0 0 1 3.425 3.426" class="prefix__cls-5" data-name="Path 738" transform="translate(-74.013 -590.805)"/>
+        </g>
+        <path id="prefix__Path_739" d="M104.668 610.573h4.72l4.5-3.6h7.429v29.089H80.61v-22.789" class="prefix__cls-5" data-name="Path 739" transform="translate(-1.894 -3.381)"/>
+        <path id="prefix__Line_139" d="M0 0L15.079 0" class="prefix__cls-5" data-name="Line 139" transform="translate(104.235 613.25)"/>
+        <path id="prefix__Line_140" d="M0 0L4.129 0" class="prefix__cls-5" data-name="Line 140" transform="translate(78.831 613.25)"/>
+        <path id="prefix__Path_740" d="M96.532 632.789l-3.875-3.875 1.169-1.169" class="prefix__cls-5" data-name="Path 740" transform="translate(-3.054 -5.48)"/>
+        <path id="prefix__Path_741" d="M109.082 624.738l3.875 3.875-3.875 3.875" class="prefix__cls-5" data-name="Path 741" transform="translate(-4.794 -5.173)"/>
+        <path id="prefix__Line_141" d="M7.292 0L0 12.175" class="prefix__cls-5" data-name="Line 141" transform="translate(95.51 616.836)"/>
+        <circle id="prefix__Ellipse_106" cx="1.389" cy="1.389" r="1.389" class="prefix__cls-5" data-name="Ellipse 106" transform="translate(112.607 606.047)"/>
+    </g>
+</svg>

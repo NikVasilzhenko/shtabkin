@@ -1,0 +1,52 @@
+.pagination{
+  @include flex-center-start;
+  margin-top: 40px;
+  &__bullets,
+  &__arrows{@include flex-center-start;}
+  &__bullets{
+    margin-right: 48px;
+    border-top: solid 1px $clr-brd;
+    border-bottom: solid 1px $clr-brd;
+    a{
+      display: block;
+      width: 48px;
+      line-height: 46px;
+      text-align: center;
+      font-family: $font-pairings;
+      font-size: 16px;
+      font-weight: bold;
+      color: $clr-grey-dark;
+      border-left: 1px solid $clr-brd;
+      &:last-child{border-right: 1px solid $clr-brd;}
+      &:hover,
+      &.active{
+        color: $clr-txt-white;
+        background-color: $clr-grey-dark;
+        border-color: $clr-grey-dark;
+      }
+    }
+  }
+  &__arrow{
+    display: block;
+    font-size: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: $shd-btn;
+    background: url(../img/svg/arrow-prev.svg) center center no-repeat $clr-white;
+    &:hover{box-shadow: $shd-btn-hover;}
+    &_prev{margin-right: 8px;}
+    &_next{transform: scale(-1, 1);}
+  }
+  @media only screen and (max-width : 767px){
+    margin-top: 24px;
+    justify-content: space-between;
+    &__bullets{display: none;}
+    &__counter{
+      font-size: 14px;
+      line-height: 1.6;
+      color: $clr-title;
+    }
+  }
+}

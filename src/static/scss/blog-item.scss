@@ -1,0 +1,70 @@
+.blog-item{
+  display: block;
+  box-shadow: $shd-main-slider;
+  background-color: $clr-white;
+  &:hover{
+    transform: translateY(-10px);
+    box-shadow: $shd-main-slider-hover;
+  }
+  &__main{
+    height: 144px;
+    padding: 23px 24px 16px;
+  }
+  &__bar{
+    @include flex-center-between;
+    margin-bottom: 20px;
+  }
+  &__view,
+  &__time{
+    font-size: 12px;
+    line-height: 1;
+    color: $clr-grey-dark;
+  }
+  &__view{
+    position: relative;
+    padding-right: 32px;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background: url(../img/svg/eye.svg) center center no-repeat;
+      width: 24px;
+      height: 24px;
+      margin-top: -13px;
+    }
+  }
+  &__txt{
+    font-size: 16px;
+    line-height: 1.6;
+    color: $clr-txt;
+    height: 75px;
+    overflow: hidden;
+    transition: color .25s;
+    &:hover{
+      color: $clr-link;
+      text-decoration: underline;
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    box-shadow: $shd-card;
+    &:hover{
+      transform: none;
+      box-shadow: $shd-card;
+    }
+    &__main{
+      height: 120px;
+      padding: 18px 24px 16px;
+    }
+    &__bar{margin-bottom: 14px;}
+    &__view,
+    &__time{font-size: 10px;}
+    &__view{padding-right: 24px;}
+    &__txt{
+      font-size: 14px;
+      height: 64px;
+      overflow: hidden;
+    }
+  }
+}

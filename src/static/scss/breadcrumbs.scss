@@ -1,0 +1,10 @@
+.breadcrumbs{
+  margin: 24px 0 20px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: $clr-grey-dark;
+  a{
+    color: $clr-grey-dark;
+    &:hover{color: $clr-link;}
+  }
+}

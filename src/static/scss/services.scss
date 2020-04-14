@@ -1,0 +1,206 @@
+.services{
+  @include flex-stretch-start-wrap;
+  &-item{
+    width: calc((100% - 72px) / 4);
+    margin: 24px 24px 0 0;
+    &:nth-child(4n+4){margin-right: 0;}
+    display: block;
+    position: relative;
+    box-shadow: $shd-main;
+    background-color: $clr-white;
+    padding: 16px 24px 88px;
+    &:hover{
+      transform: translateY(-10px);
+      box-shadow: $shd-card-hover;
+    }
+    &__pic{
+      width: 72px;
+      margin: 0 0 9px -8px;
+    }
+    &__btn{
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+    }
+    &__title{
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      color: $clr-title;
+      &:hover{
+        color: $clr-link;
+        text-decoration: underline;
+      }
+    }
+    &__txt{
+      @include txt-s;
+      letter-spacing: -.1px;
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    justify-content: space-between;
+    &-item{
+      width: calc(50% - 8px);
+      margin: 16px 0 0 0;
+      padding: 16px 16px 80px 24px;
+      &:hover{transform: none;
+        box-shadow: $shd-card;
+      }
+      &__btn{
+        width: 144px;
+        right: auto;
+        font-size: 14px;
+        text-transform: none;
+      }
+      &__title{
+        margin-bottom: 6px;
+      }
+      &__txt{font-size: 12px;}
+    }
+  }
+  @media only screen and (max-width : 767px){
+    display: block;
+    &-item{
+      width: 100%;
+      margin: 16px 0 0 0;
+      padding: 32px 16px 40px 80px;
+      position: relative;
+      &__pic{
+        width: 64px;
+        position: absolute;
+        top: 12px;
+        left: 8px;
+        margin: 0;
+      }
+      &__btn{position: static;}
+      &__txt{margin-bottom: 24px;}
+    }
+  }
+}
+.services-alt{
+  @include flex-stretch-between-wrap;
+  margin-bottom: 48px;  
+  &-item{
+    width: calc(50% - 12px);
+    margin-top: 24px;
+    box-shadow: $shd-main;
+    background-color: $clr-white;
+    padding: 24px;
+    min-height: 216px;
+    @include flex-start-between;
+    &__pic{width: 72px;}
+    &__main{width: calc(100% - 72px - 16px);}
+    &__title{
+      padding-top: 10px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: $clr-txt;
+      font-weight: 400;
+    }
+    &__list{
+      padding-left: 8px;
+      li{
+        font-size: 10px;
+        line-height: 1.5;
+        color: $clr-grey-dark;
+        position: relative;
+        margin-bottom: 17px;
+        padding-left: 24px;
+        &:last-child{margin-bottom: 0;}
+        a{
+          color: $clr-link;
+          &:hover{text-decoration: underline;}
+        }
+        &:before{
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url(../img/svg/arrow-bulet_green.svg) center center no-repeat;
+          position: absolute;
+          left: 0;
+          top: -2px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    margin-bottom: 32px;  
+    &-item{
+      width: calc(50% - 8px);
+      margin-top: 16px;
+      padding: 16px 16px 32px;
+      min-height: 272px;
+      display: block;
+      &__pic{
+        width: 64px;
+        margin-bottom: 16px;
+      }
+      &__main{width: 100%;}
+      &__title{padding-top: 0;}
+      &__list{
+        padding-left: 0;
+        li{margin-bottom: 16px;}
+      }
+    }
+  }
+  @media only screen and (max-width : 767px){
+    display: block;
+    margin-bottom: 32px;
+    &-item{
+      width: 100%;
+      margin-top: 16px;
+      padding: 16px 16px 32px;
+      min-height: unset;
+      display: block;
+      &__pic{
+        width: 64px;
+        margin-bottom: 16px;
+      }
+      &__main{width: 100%;}
+      &__title{padding-top: 0;}
+      &__list{padding-left: 0;}
+    }
+  }
+}
+.services-footer{
+  @include flex-start-between;
+  &__quoteblock{width: 344px;}
+  @media only screen and (max-width : 1023px){
+    display: block;
+    &__quoteblock{
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }  
+}
+.services-form{
+  width: calc(100% - 344px - 50px);
+  &__row{
+    @include flex-start-between;
+    margin-bottom: 16px;
+    .services-form__submit{width: 288px;}
+    .label{width: calc(100% - 288px - 23px);}
+  }
+  @media only screen and (max-width : 1023px){
+    width: 100%;
+    &__row{
+      margin-bottom: 24px;
+      .services-form__submit{width: calc(50% - 8px);}
+      .label{width: calc(50% - 8px);}
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__row{
+      display: block;
+      .services-form__submit,
+      .label{
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

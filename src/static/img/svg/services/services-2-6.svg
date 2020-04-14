@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .prefix__cls-3,.prefix__cls-5{fill:none;stroke:#2b3b54;stroke-linecap:round;stroke-width:1.4px}.prefix__cls-3{stroke-miterlimit:10}.prefix__cls-4{fill:#2b3b54}.prefix__cls-5{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="prefix__Group_6630" data-name="Group 6630" transform="translate(-448.264 -448.294)">
+        <path id="prefix__Rectangle_7537" d="M0 0H72V72H0z" data-name="Rectangle 7537" transform="translate(448.264 448.294)" style="opacity:0;fill:#d9e9f3"/>
+        <circle id="prefix__Ellipse_94" cx="21.154" cy="21.154" r="21.154" data-name="Ellipse 94" transform="translate(450.558 472.009)" style="fill:#d9e9f3"/>
+        <g id="prefix__Group_6627" data-name="Group 6627" transform="translate(476.077 455.764)">
+            <path id="prefix__Line_117" d="M2.98 0L0 0" class="prefix__cls-3" data-name="Line 117" transform="translate(0 1.49)"/>
+            <path id="prefix__Line_118" d="M0 2.98L0 0" class="prefix__cls-3" data-name="Line 118" transform="translate(1.49)"/>
+        </g>
+        <g id="prefix__Group_6628" data-name="Group 6628" transform="translate(506.827 511.754)">
+            <path id="prefix__Line_119" d="M2.98 0L0 0" class="prefix__cls-3" data-name="Line 119" transform="translate(0 1.49)"/>
+            <path id="prefix__Line_120" d="M0 2.98L0 0" class="prefix__cls-3" data-name="Line 120" transform="translate(1.49)"/>
+        </g>
+        <circle id="prefix__Ellipse_95" cx=".884" cy=".884" r=".884" class="prefix__cls-4" data-name="Ellipse 95" transform="translate(515.164 491.206)"/>
+        <circle id="prefix__Ellipse_96" cx=".884" cy=".884" r=".884" class="prefix__cls-4" data-name="Ellipse 96" transform="translate(451.393 466.518)"/>
+        <g id="prefix__Group_6629" data-name="Group 6629" transform="translate(483.428 457.254)">
+            <path id="prefix__Path_726" d="M503.865 477.351h-2.453a1.131 1.131 0 0 1-1.131-1.131 1.131 1.131 0 0 1 1.131-1.131 1.131 1.131 0 0 1 1.131 1.131v9.242" class="prefix__cls-5" data-name="Path 726" transform="translate(-488.922 -460.084)"/>
+            <path id="prefix__Path_727" d="M503.942 477.351h2.458a1.131 1.131 0 0 0 1.131-1.131 1.131 1.131 0 0 0-1.131-1.131 1.131 1.131 0 0 0-1.131 1.131v9.242" class="prefix__cls-5" data-name="Path 727" transform="translate(-489.308 -460.084)"/>
+            <path id="prefix__Path_728" d="M511.2 472.784a8.034 8.034 0 1 0-14.631 4.584 10.764 10.764 0 0 1 2 6.142v.394a.677.677 0 0 0 .677.677h7.833a.677.677 0 0 0 .677-.677v-.394a10.687 10.687 0 0 1 1.991-6.124 7.992 7.992 0 0 0 1.453-4.602z" class="prefix__cls-5" data-name="Path 728" transform="translate(-488.378 -458.992)"/>
+            <path id="prefix__Path_729" d="M500.282 486.922v4.434a.638.638 0 0 0 .233.494l1.648 1.354a.639.639 0 0 0 .405.146h2.491a.639.639 0 0 0 .432-.168l1.439-1.318a.637.637 0 0 0 .207-.471v-4.47" class="prefix__cls-5" data-name="Path 729" transform="translate(-488.922 -461.334)"/>
+            <path id="prefix__Line_121" d="M0 0L8.434 0" class="prefix__cls-5" data-name="Line 121" transform="translate(10.571 28.512)"/>
+            <path id="prefix__Line_122" d="M0 0L2.331 0" class="prefix__cls-5" data-name="Line 122" transform="translate(0 14.58)"/>
+            <path id="prefix__Line_123" d="M0 0L2.331 0" class="prefix__cls-5" data-name="Line 123" transform="translate(26.828 14.58)"/>
+            <path id="prefix__Line_124" d="M0 2.331L0 0" class="prefix__cls-5" data-name="Line 124" transform="translate(14.58)"/>
+            <path id="prefix__Line_125" d="M0 1.648L1.648 0" class="prefix__cls-5" data-name="Line 125" transform="translate(23.241 4.27)"/>
+            <path id="prefix__Line_126" d="M1.648 1.648L0 0" class="prefix__cls-5" data-name="Line 126" transform="translate(4.27 4.27)"/>
+            <path id="prefix__Path_730" d="M498.045 473.7c0 .11-.005-.049 0 .061" class="prefix__cls-5" data-name="Path 730" transform="translate(-488.685 -459.937)"/>
+            <path id="prefix__Path_731" d="M503.333 467.9a5.114 5.114 0 0 0-4.856 3.144" class="prefix__cls-5" data-name="Path 731" transform="translate(-488.731 -459.325)"/>
+        </g>
+        <circle id="prefix__Ellipse_97" cx="2.723" cy="2.723" r="2.723" class="prefix__cls-5" data-name="Ellipse 97" transform="translate(457.693 481.51)"/>
+        <circle id="prefix__Ellipse_98" cx="2.723" cy="2.723" r="2.723" class="prefix__cls-5" data-name="Ellipse 98" transform="translate(469.375 481.51)"/>
+        <circle id="prefix__Ellipse_99" cx="2.723" cy="2.723" r="2.723" class="prefix__cls-5" data-name="Ellipse 99" transform="translate(457.693 490.708)"/>
+        <circle id="prefix__Ellipse_100" cx="2.723" cy="2.723" r="2.723" class="prefix__cls-5" data-name="Ellipse 100" transform="translate(469.375 490.708)"/>
+        <circle id="prefix__Ellipse_101" cx="2.723" cy="2.723" r="2.723" class="prefix__cls-5" data-name="Ellipse 101" transform="translate(457.693 499.905)"/>
+        <circle id="prefix__Ellipse_102" cx="2.723" cy="2.723" r="2.723" class="prefix__cls-5" data-name="Ellipse 102" transform="translate(469.375 499.905)"/>
+        <path id="prefix__Line_127" d="M7.279 0L0 5.758" class="prefix__cls-5" data-name="Line 127" transform="translate(462.555 495.186)"/>
+        <path id="prefix__Line_128" d="M0 0L7.203 5.671" class="prefix__cls-5" data-name="Line 128" transform="translate(462.757 486.076)"/>
+        <path id="prefix__Line_129" d="M0 5.733L7.282 0" class="prefix__cls-5" data-name="Line 129" transform="translate(462.678 485.917)"/>
+        <path id="prefix__Line_130" d="M7.404 5.829L0 0" class="prefix__cls-5" data-name="Line 130" transform="translate(462.555 495.115)"/>
+        <path id="prefix__Path_733" d="M478.185 488.5h2.8a2.487 2.487 0 0 1 2.486 2.486v19.38a4.285 4.285 0 0 0 4.284 4.285h9.329a4.285 4.285 0 0 0 4.284-4.285v-16.849" class="prefix__cls-5" data-name="Path 733" transform="translate(-3.16 -4.246)"/>
+        <path id="prefix__Line_131" d="M0 0L5.492 0" class="prefix__cls-5" data-name="Line 131" transform="translate(474.822 493.431)"/>
+        <path id="prefix__Line_132" d="M0 0L5.492 0" class="prefix__cls-5" data-name="Line 132" transform="translate(474.822 502.628)"/>
+    </g>
+</svg>

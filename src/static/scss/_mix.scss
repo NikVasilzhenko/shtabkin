@@ -1,0 +1,219 @@
+//флекс модели
+@mixin flex-center-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-center-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-start-center{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@mixin flex-start-start{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@mixin flex-center-start{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin flex-stretch-start{
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+@mixin flex-stretch-between{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+@mixin flex-stretch-start-wrap{
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+@mixin flex-stretch-between-wrap{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@mixin flex-start-start{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@mixin flex-start-between{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@mixin flex-end-between{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+@mixin flex-end-center{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+@mixin flex-end-end{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@mixin flex-stretch-between-column{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+//center absolute
+@mixin center-absolute{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//form resets
+@mixin btn-reset{
+  display: block;
+  padding: 0;
+  outline: 0!important;
+  outline-color: transparent!important;
+  outline-width: 0!important;
+  outline-style: none!important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  border: none;
+  background: none;
+  box-shadow: none;
+  transition: .25s ease;  
+  cursor: pointer;
+  border-radius: 0;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &::-moz-focus-inner {border: 0;}
+  &:disabled {
+    cursor: default;
+    opacity: 1;
+    user-select: none;	
+  }
+}
+@mixin input-reset{
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  transition: .25s ease;  
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+@mixin fieldset-reset{
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+@mixin textarea-reset{
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  transition: .25s ease;  
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  resize: none;
+}
+@mixin form-reset{margin: 0;}
+
+//txt
+@mixin h1{
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: $clr-title;
+  @media only screen and (max-width : 1023px){
+    font-size: 22px;
+    line-height: 1.4;
+  }
+}
+@mixin h2{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: $clr-title;
+  @media only screen and (max-width : 1023px){
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+@mixin h3{
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: $clr-title;
+  @media only screen and (max-width : 1023px){
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+@mixin txt-xl{
+  font-size: 18px;
+  line-height: 1.6;
+  color: $clr-txt;
+  @media only screen and (max-width : 1023px){
+    font-size: 16px;
+  }
+}
+@mixin txt-l{
+  font-size: 16px;
+  line-height: 1.6;
+  color: $clr-txt;
+  @media only screen and (max-width : 1023px){
+    font-size: 14px;
+  }
+}
+@mixin txt-m{
+  font-size: 14px;
+  line-height: 1.6;
+  color: $clr-txt;
+  @media only screen and (max-width : 1023px){
+    font-size: 12px;
+  }
+}
+@mixin txt-s{
+  font-size: 12px;
+  line-height: 1.6;
+  color: $clr-txt;
+  @media only screen and (max-width : 1023px){
+    font-size: 10px;
+  }
+}
+
+@mixin a2{
+  font-size: 16px;
+  line-height: 1.6;
+  color: $clr-txt;
+  &:hover{
+    color: $clr-link;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,14 @@
+.cace-sec{
+  .sec-title{margin-bottom: 32px;}
+  &__order{
+  	width: 344px;
+  	margin: 0 auto;
+  }
+  &__more{margin: 32px auto;}
+  @media only screen and (max-width : 1023px){
+    &__wrap{margin-bottom: 24px;}
+    .sec-title{margin-bottom: 24px;}
+    &__order{width: 288px;}
+    &__more{margin: 24px auto;}
+  }
+}

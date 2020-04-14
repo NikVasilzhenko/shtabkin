@@ -1,0 +1,51 @@
+//библиотеки и плагины
+@import "vendors.scss";
+
+//шрифты
+@import "fonts.scss";
+
+//переменный и миксины
+@import "_vars.scss";
+@import "_mix.scss";
+
+//базовые глобальные стили
+@import "basic.scss";
+
+//глобальные модули
+@import "intro.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "hide-menu.scss";
+@import "big-nav.scss";
+@import "tab-bar.scss";
+@import "popup.scss";
+
+//модули
+@import "main-sec.scss";
+@import "video-wrap.scss";
+@import "result-sec.scss";
+@import "result-sec.scss";
+@import "caces-sec.scss";
+@import "cace.scss";
+@import "services-sec.scss";
+@import "services.scss";
+@import "about-sec.scss";
+@import "blog-sec.scss";
+@import "blog-item.scss";
+@import "docs-sec.scss";
+@import "video-sec.scss";
+@import "faq-sec.scss";
+@import "form.scss";
+@import "breadcrumbs.scss";
+@import "pagination.scss";
+@import "caces-page-bar.scss";
+@import "cace-grid.scss";
+@import "cace-grid-item.scss";
+@import "article.scss";
+@import "sub-service.scss";
+@import "subscribe-sec.scss";
+@import "steps-sec.scss";
+@import "questions-sec.scss";
+@import "quote-sec.scss";
+@import "tarrifs-sec.scss";
+@import "diag-sec.scss";

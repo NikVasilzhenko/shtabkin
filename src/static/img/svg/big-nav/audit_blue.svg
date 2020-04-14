@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#5060d5}
+        </style>
+    </defs>
+    <g id="prefix__Group_7443" data-name="Group 7443" transform="translate(-432 -512)">
+        <path id="prefix__Прямоугольник_1" d="M0 0H56V56H0z" data-name="Прямоугольник 1" transform="translate(432 512)" style="fill:#edf5fa;opacity:0"/>
+        <g id="prefix__Group_7451" data-name="Group 7451" transform="translate(224.036 501.876)">
+            <path id="prefix__Path_2247" d="M247.435 50.212h-1.82v3.641h-12.642V55.5h-6.867v-1.647H213.3V34.32h15.455V32.5h-17.278v21.353h-2.515v4.239a2.9 2.9 0 0 0 2.893 2.893h35.37a2.9 2.9 0 0 0 2.892-2.893v-4.239h-2.682zm.863 7.88a1.074 1.074 0 0 1-1.073 1.074h-35.37a1.074 1.074 0 0 1-1.074-1.074v-2.419h13.506v1.649h10.506v-1.649h13.5z" class="prefix__cls-2" data-name="Path 2247" transform="translate(0 -1.386)"/>
+            <path id="prefix__Path_2248" d="M261.36 18.034v-.91h-1.82V20.6h1.82v-.742h1.41V28.1a5.6 5.6 0 0 1-11.2 0v-8.247h1.46v.747h1.82v-3.476h-1.82v.91h-3.28V28.1a7.426 7.426 0 0 0 6.25 7.315v8.932h-11.6v-7.536h.035v-12.68h-10.502V34.77a4.639 4.639 0 1 0 1.82-.03v-8.79h6.867v10.121h-.035v10.1h15.233V35.484a7.428 7.428 0 0 0 6.772-7.384V18.034zm-23.623 21.253a2.81 2.81 0 1 1-2.811-2.81 2.813 2.813 0 0 1 2.811 2.81z" class="prefix__cls-2" data-name="Path 2248" transform="translate(-1.924)"/>
+            <circle id="prefix__Ellipse_183" cx="1.104" cy="1.104" r="1.104" class="prefix__cls-2" data-name="Ellipse 183" transform="translate(231.899 38.183)"/>
+            <path id="prefix__Rectangle_8341" d="M0 0H8.28V1.82H0z" class="prefix__cls-2" data-name="Rectangle 8341" transform="translate(217.743 37.022)"/>
+            <path id="prefix__Rectangle_8342" d="M0 0H8.28V1.82H0z" class="prefix__cls-2" data-name="Rectangle 8342" transform="translate(217.743 40.388)"/>
+            <path id="prefix__Rectangle_8343" d="M0 0H8.28V1.82H0z" class="prefix__cls-2" data-name="Rectangle 8343" transform="translate(217.743 43.93)"/>
+        </g>
+    </g>
+</svg>

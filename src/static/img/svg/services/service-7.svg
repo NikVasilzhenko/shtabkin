@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .prefix__cls-2,.prefix__cls-5{fill:none;stroke:#2b3b54;stroke-linecap:round;stroke-width:1.4px}.prefix__cls-2{stroke-miterlimit:10}.prefix__cls-3{fill:#2b3b54}.prefix__cls-5{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="prefix__Group_6655" data-name="Group 6655" transform="translate(-448.268 -576.178)">
+        <path id="prefix__Rectangle_7543" d="M0 0H72V72H0z" data-name="Rectangle 7543" transform="translate(448.268 576.178)" style="opacity:0;fill:#d9e9f3"/>
+        <g id="prefix__Group_6644" data-name="Group 6644" transform="translate(494.777 583.501)">
+            <path id="prefix__Line_156" d="M2.98 0L0 0" class="prefix__cls-2" data-name="Line 156" transform="translate(0 1.49)"/>
+            <path id="prefix__Line_157" d="M0 2.98L0 0" class="prefix__cls-2" data-name="Line 157" transform="translate(1.49)"/>
+        </g>
+        <g id="prefix__Group_6645" data-name="Group 6645" transform="translate(461.649 638.673)">
+            <path id="prefix__Line_158" d="M2.98 0L0 0" class="prefix__cls-2" data-name="Line 158" transform="translate(0 1.49)"/>
+            <path id="prefix__Line_159" d="M0 2.98L0 0" class="prefix__cls-2" data-name="Line 159" transform="translate(1.49)"/>
+        </g>
+        <circle id="prefix__Ellipse_126" cx=".884" cy=".884" r=".884" class="prefix__cls-3" data-name="Ellipse 126" transform="translate(515.568 602.32)"/>
+        <circle id="prefix__Ellipse_127" cx=".884" cy=".884" r=".884" class="prefix__cls-3" data-name="Ellipse 127" transform="translate(451.394 592.606)"/>
+        <g id="prefix__Group_6648" data-name="Group 6648" transform="translate(458.486 589.382)">
+            <circle id="prefix__Ellipse_128" cx="21.154" cy="21.154" r="21.154" data-name="Ellipse 128" style="fill:#d9e9f3"/>
+            <g id="prefix__Group_6646" data-name="Group 6646" transform="translate(8.3 13.983)">
+                <circle id="prefix__Ellipse_129" cx=".884" cy=".884" r=".884" class="prefix__cls-3" data-name="Ellipse 129"/>
+                <circle id="prefix__Ellipse_130" cx=".884" cy=".884" r=".884" class="prefix__cls-3" data-name="Ellipse 130" transform="translate(3.332)"/>
+                <circle id="prefix__Ellipse_131" cx=".884" cy=".884" r=".884" class="prefix__cls-3" data-name="Ellipse 131" transform="translate(6.665)"/>
+            </g>
+            <g id="prefix__Group_6647" data-name="Group 6647" transform="translate(21.044 23.578)">
+                <path id="prefix__Path_760" d="M486.287 617.3l.947 1.92 2.119.308-1.533 1.495.362 2.11-1.895-1-1.895 1 .362-2.11-1.533-1.495 2.119-.308z" class="prefix__cls-5" data-name="Path 760" transform="translate(-483.221 -617.304)"/>
+                <path id="prefix__Path_761" d="M495.544 617.3l.947 1.92 2.119.308-1.533 1.495.362 2.11-1.895-1-1.895 1 .362-2.11-1.533-1.495 2.119-.308z" class="prefix__cls-5" data-name="Path 761" transform="translate(-484.198 -617.304)"/>
+                <path id="prefix__Path_762" d="M505 617.3l.947 1.92 2.119.308-1.533 1.495.362 2.11-1.895-1-1.9 1 .362-2.11-1.533-1.495 2.119-.308z" class="prefix__cls-5" data-name="Path 762" transform="translate(-485.197 -617.304)"/>
+            </g>
+            <path id="prefix__Path_763" d="M477.7 616.908v10.25a2.4 2.4 0 0 0 2.4 2.4h25.37v.008h8.092l-3.3-3.916v-14.088a2.4 2.4 0 0 0-2.4-2.4h-20.818" class="prefix__cls-5" data-name="Path 763" transform="translate(-461.595 -592.866)"/>
+            <path id="prefix__Path_764" d="M461.663 612.429l1.786-2.117v-7.617a1.3 1.3 0 0 1 1.3-1.3h15.01a1.3 1.3 0 0 1 1.3 1.3v8.432a1.3 1.3 0 0 1-1.3 1.3h-13.721z" class="prefix__cls-5" data-name="Path 764" transform="translate(-459.901 -592.046)"/>
+        </g>
+    </g>
+</svg>

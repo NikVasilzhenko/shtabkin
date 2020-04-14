@@ -1,0 +1,91 @@
+.faq-sec{
+  &__wrap{@include flex-start-between;}
+  &__main{
+    width: calc(100% - 440px - 56px);
+    .sec-title{margin-bottom: 40px;}
+  }
+  &__form{width: 440px;}
+  @media only screen and (max-width : 1023px){
+    &__wrap{display: block;}
+    &__main{
+      width: 100%;
+      margin-bottom: 30px;
+      .sec-title{margin-bottom: 20px;}
+    }
+    &__form{width: 100%;}
+  }
+  @media only screen and (max-width : 767px){
+    &__main{margin-bottom: 40px;}
+  }
+}
+.faq{
+  &__item{
+    margin-bottom: 32px;
+    &:last-child{margin-bottom: 0;}
+  }
+  &__title{
+    padding-left: 48px;
+    position: relative;
+    min-height: 32px;
+    @include flex-center-start;    
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -16px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: url(../img/svg/chevrone-down_blue.svg) center center no-repeat $clr-white;
+      box-shadow: $shd-boolet;
+    }
+    span{
+      font-size: 18px;
+      line-height: 1.2;
+      color: $clr-txt;
+      font-weight: 400;
+      border-bottom: 1px dotted $clr-txt;
+    }
+    &.open{
+      &:before{background: url(../img/svg/chevrone-up_white.svg) center center no-repeat $clr-link-hover;}
+      span{
+        color: $clr-link-hover;
+        border-color: $clr-link-hover;
+      }
+    }
+  }
+  &__main{
+    padding: 24px 0 0 48px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $clr-title;
+    display: none;
+  }
+  @media only screen and (max-width : 1023px){
+    &__item{margin-bottom: 20px;}
+    &__title{
+      span{font-size: 16px;}
+    }
+    &__main{
+      padding: 13px 0 0 48px;
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__item{margin-bottom: 40px;}
+    &__title{
+      min-height: unset;
+      span{
+        border-bottom: none;
+        text-decoration: underline;
+      }
+      &:before {
+        top: -8px;
+        margin-top: 0;
+      }
+    }    
+  }
+}

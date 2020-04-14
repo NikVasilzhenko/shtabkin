@@ -1,0 +1,198 @@
+.header{
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: $shd-header;
+  background-color: $clr-white;
+  &__main,
+  &__wrap{
+    @include flex-center-between;
+  }
+  &-burger{
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    border-right: 1px solid $clr-brd;
+    position: relative;
+    &:before,
+    &:after,
+    span{
+      content: '';
+      display: block;
+      background-color: $clr-grey;
+      width: 18px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: .25s;
+      margin-left: -10px;
+    }
+    &:before{margin-top: -6px;}
+    &:after{margin-top: 4px;}
+    span{margin-top: -1px;}
+    &:hover{
+      background-color: $clr-act;
+      border-color: $clr-act;
+      &:before,
+      &:after,
+      span{background-color: $clr-white;}      
+    }
+    &.open{
+      span{display: none;}
+      &:before,
+      &:after{margin-top: -1px;}
+      &:before{transform: rotate(45deg);}
+      &:after{transform: rotate(-45deg);}
+    }
+  }
+  &__main{
+    flex-grow: 1;
+    padding: 0 24px;
+  }
+  &-tel{
+    display: block;
+    width: 222px;
+    min-width: 222px;
+    height: 64px;
+    line-height: 64px;
+    border-left: 1px solid $clr-brd;
+    text-align: center;
+    white-space: nowrap;
+    color: $clr-title;
+    font-size: 14px;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+  &-logo{
+    display: block;
+    width: 160px;
+  }
+  &-nav{
+    & > ul{
+      margin: 0 13px;
+      @include flex-center-center
+      & > li{
+        line-height: 64px;
+        margin: 0 13px;
+        position: relative;
+        & > a{
+          color: $clr-grey-dark;
+          line-height: 1.6;
+          font-size: 14px;
+          position: relative;
+          white-space: nowrap;
+          display: inline-block;
+          &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $clr-act;
+            opacity: 0;
+            transition: opacity 0;
+          }
+          &:hover{
+            &:after{opacity: 1;}
+          }
+        }
+      }
+    }
+    &__drop{
+      position: relative;
+      color: $clr-grey-dark;
+      line-height: 1.6;
+      font-size: 14px;
+      white-space: nowrap;
+      display: inline-block;
+      cursor: pointer;
+      transition: color .25s;
+      svg{
+        display: inline-block;
+        vertical-align: middle;
+        fill: $clr-grey-dark;
+      }
+      &:hover{
+        color: $clr-txt;
+        svg{
+          fill: $clr-txt;
+          transform: rotate(180deg);
+        }
+        .header-nav__sublist{display: block;}
+      }
+    }
+    &__sublist{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: -1px;
+      box-shadow: $shd-header;
+      background-color: $clr-white;
+      min-width: 160px;
+      li{
+        a{
+          white-space: nowrap;
+          display: block;
+          padding: 16px 22px;
+          border-top: 1px solid $clr-brd;
+          background-color: $clr-white;
+          @include a2;
+        }
+      }
+    }
+  }
+  &-soc{
+    @include flex-center-between;
+    li{
+      margin-right: 8px;
+      &:last-child{margin-right: 0;}
+    }
+    &__link{
+      @include flex-center-center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;      
+      svg{
+        display: block;
+        fill: $clr-grey;
+        transition: fill .25s;
+      }
+      &:hover{
+        svg{fill: $clr-white;}
+      }
+      &_vk:hover{background-color: #4a76a8;}
+      &_instagram:hover{background-image: linear-gradient(226deg, #862dac 10%, #e60050 32%, #ff0000 63%, #fec500 91%);}
+    }
+  }
+}
+@media only screen and (max-width : 1299px){
+  .header-nav>ul>li{margin: 0 8px;}
+  .header__main{padding-right: 12px;}
+}
+@media only screen and (max-width : 1199px){
+  .header-nav{display: none;}
+}
+@media only screen and (max-width : 767px){
+  .header{
+    .header-soc{display: none;}
+    &-tel {
+      width: 64px;
+      min-width: 64px;
+      font-size: 0;
+      @include flex-center-center;
+      img{
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

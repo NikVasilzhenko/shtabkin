@@ -1,0 +1,169 @@
+.footer{
+  background-color: $clr-title;
+  padding-top: 40px;
+  &__bottom{
+    border-top: 1px solid rgba(237, 245, 250, .25);
+    padding: 17px 0;
+    position: relative;
+    &-right,
+    &-left,
+    &-wrap{
+      @include flex-center-between;
+    }
+    &-right,
+    &-left{
+      width: 50%;
+    }
+  }
+  &__copyright{
+    width: 255px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: $clr-grey;
+  }
+  &__polit{
+    width: calc(100% - 255px);
+    a{
+      font-size: 12px;
+      line-height: 1.6;
+      color: $clr-grey;
+      padding-left: 20px;
+      position: relative;
+      &:before{
+        content: '';
+        display: block;
+        background: url(../img/svg/footer/lock.svg) center center no-repeat;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -8px;
+      }
+      &:hover{
+        color: $clr-act;
+        text-decoration: underline;
+      }
+    }
+  }
+  &-up{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $clr-footer-btn;
+    @include flex-center-center;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -24px;
+    svg{
+      display: block;
+      fill: $clr-grey-dark;
+      transition: fill .25s;
+    }
+    &:hover{
+      background-color: $clr-act;
+      svg{fill: $clr-white;}
+    }
+  }
+  &__bar{
+    @include flex-center-between;
+    &-item{
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+      background-color: $clr-footer-btn;
+      @include flex-center-center;
+      margin-right: 8px;
+      svg{
+        display: block;
+        fill: $clr-grey-dark;
+        transition: fill .25s;
+      }
+      &:hover{
+        svg{fill: $clr-white;}
+      }
+      &_vk:hover{background-color: #4a76a8;}
+      &_instagram:hover{background-image: linear-gradient(226deg, #862dac 10%, #e60050 32%, #ff0000 63%, #fec500 91%);}
+      &_tel{
+        width: 176px;
+        color: $clr-txt-white;
+        font-size: 12px;
+        line-height: 1.6;
+        svg{margin-right: 8px;}
+        &:hover{background-color: $clr-act;}
+      }
+    }
+    &-mail{
+      margin-left: 16px;
+      padding-left: 32px;
+      position: relative;
+      display: block;
+      font-size: 13px;
+      line-height: 1.72;
+      color: $clr-grey-light;
+      &:hover{
+        color: $clr-act;
+        text-decoration: underline;
+      }
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: url(../img/svg/footer/mail.svg) center center no-repeat;
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+      }
+    }
+  }
+  @media only screen and (max-width : 1099px){
+    &-up{
+      right: 24px;
+      bottom: 17px;
+      top: auto;
+      margin-top: 0;
+    }
+    &__bottom{
+      &-wrap{display: block;}
+      &-right{
+        justify-content: flex-start;        
+      }
+      &-right,
+      &-left{        
+        width: 100%;
+        align-items: flex-start;
+      }
+      &-left{margin-bottom: 20px;}
+    }
+    &__polit{width: auto;}
+  }
+  @media only screen and (max-width : 1023px){
+    padding-top: 32px;
+    &__bottom{
+      padding: 24px 0 32px;
+      border-top-color: $clr-footer-btn;
+    }
+    &__copyright{width: 50%;}
+    &-up{
+      right: 16px;
+      bottom: 32px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    .footer{
+      &__bottom-left{display: block;}
+      &__copyright{
+        width: 100%;
+        margin-bottom: 32px;
+      }
+      &__bar{
+        flex-wrap: wrap;
+        &-item_tel{margin-right: 0;}
+        &-mail{margin: 28px 0 12px;}
+      }
+    }
+  }
+}

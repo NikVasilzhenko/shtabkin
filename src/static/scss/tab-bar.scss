@@ -1,0 +1,34 @@
+.tab-bar{
+  @include flex-stretch-start;
+  &__btn{
+    border: 1px solid $clr-brd;
+    padding: 6px 16px;
+    border-right: none;
+    font-family: $font-pairings;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $clr-grey-dark;
+    &:last-child{border-right: 1px solid $clr-brd;}
+    &.active,
+    &:hover{
+      background-color: $clr-grey-dark;
+      color: $clr-txt-white;
+      border-color: $clr-grey-dark;
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    &__btn{
+      font-size: 10px;
+      padding: 7px 16px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__btn{
+      padding: 7px 8px;
+      text-align: center;
+    }      
+  }
+}

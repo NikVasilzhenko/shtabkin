@@ -1,0 +1,27 @@
+<div class="popup js-popup" style="display: block;">
+  <div class="popup__overlay js-popup-close"></div>
+  <form action="#" method="post" class="popup__wrap popup__wrap_order">
+    <button class="btn btn_close popup__close js-popup-close" type="button" title="Закрыть"></button>
+    <p class="popup__txt">Оставьте заявку или позвоните прямо сейчас <a href="tel:+74954444444">+7 (495) 444-44-44</a>. <br>Можно в&nbsp;<a title="WhatsApp" href="whatsapp://send?phone=+74954444444">WhatsApp</a></p>
+    <label class="label label_name">
+      <span class="label__name">Ваше имя</span>
+      <input type="text" class="input input_name js-input" placeholder="Иванов Иван" onfocus="addClassFocused(this);" onblur="removeClassFocused(this);" oninput="addClassValue(this);">
+    </label>
+    <label class="label label_tel">
+      <span class="label__name">Телефон</span>
+      <input type="tel" class="input input_tel js-input" onfocus="addClassFocused(this);addTelPrefix(this);" onblur="removeClassFocused(this);" oninput="addClassValue(this);">
+    </label>
+    <label class="label label_address">
+      <span class="label__name">Адрес сайта</span>
+      <input type="text" class="input input_name js-input" placeholder="Иванов Иван" onfocus="addClassFocused(this);" onblur="removeClassFocused(this);" oninput="addClassValue(this);">
+    </label>
+    <button class="btn btn_red btn_xl form__submit" type="submit">ОБСУДИТЬ ПРОЕКТ</button>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" checked="">
+        <span class="checkbox__box"></span>
+      </label>
+      <span class="checkbox__txt">Я согласен с <a href="#" target="_blank">условиями обработки</a> персональных данных</span>          
+    </div>
+  </form>
+</div>

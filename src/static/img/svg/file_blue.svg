@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#5060d5}
+        </style>
+    </defs>
+    <g id="prefix__Group_6147" data-name="Group 6147" transform="translate(-432 -512)">
+        <path id="prefix__Прямоугольник_1" d="M0 0H64V64H0z" data-name="Прямоугольник 1" transform="translate(432 512)" style="fill:#fff;opacity:0"/>
+        <g id="prefix__Group_6146" data-name="Group 6146" transform="translate(363.917 386.555)">
+            <path id="prefix__Path_2" d="M83.083 134.445v45.331H108.5l8.582-8.582v-36.75zm2 2h30v33.337h-8v8H85.082zm28.589 35.336l-4.584 4.584v-4.585z" class="prefix__cls-2" data-name="Path 2"/>
+            <path id="prefix__Rectangle_7487" d="M0 0H13.725V2H0z" class="prefix__cls-2" data-name="Rectangle 7487" transform="translate(96.378 145.142)"/>
+            <path id="prefix__Rectangle_7488" d="M0 0H2.688V2H0z" class="prefix__cls-2" data-name="Rectangle 7488" transform="translate(90.267 145.142)"/>
+            <path id="prefix__Rectangle_7489" d="M0 0H13.725V2H0z" class="prefix__cls-2" data-name="Rectangle 7489" transform="translate(96.378 150.881)"/>
+            <path id="prefix__Rectangle_7490" d="M0 0H2.688V2H0z" class="prefix__cls-2" data-name="Rectangle 7490" transform="translate(90.267 150.881)"/>
+            <path id="prefix__Rectangle_7491" d="M0 0H13.725V2H0z" class="prefix__cls-2" data-name="Rectangle 7491" transform="translate(96.378 156.72)"/>
+            <path id="prefix__Rectangle_7492" d="M0 0H2.688V2H0z" class="prefix__cls-2" data-name="Rectangle 7492" transform="translate(90.267 156.72)"/>
+            <path id="prefix__Rectangle_7493" d="M0 0H13.725V2H0z" class="prefix__cls-2" data-name="Rectangle 7493" transform="translate(96.378 162.421)"/>
+            <path id="prefix__Rectangle_7494" d="M0 0H2.688V2H0z" class="prefix__cls-2" data-name="Rectangle 7494" transform="translate(90.267 162.421)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,79 @@
+.cace-grid-item{
+  display: block;
+  margin: 24px 24px 0 0;
+  width: calc((100% - 48px) / 3);
+  &:nth-child(3n+3){margin-right: 0;}
+  position: relative;
+  box-shadow: $shd-main;
+  background-color: $clr-white;
+  &__pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .25s;
+    background: center center no-repeat;
+    background-size: cover;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: -webkit-linear-gradient(rgba(54, 57, 77, 0.4), rgba(54, 57, 77, 0.8));
+      background-image: -o-linear-gradient(rgba(54, 57, 77, 0.4), rgba(54, 57, 77, 0.8));
+      background-image: linear-gradient(rgba(54, 57, 77, 0.4), rgba(54, 57, 77, 0.8));
+    }
+  }
+  &:hover{
+    .cace-grid-item__pic{opacity: 1;}
+    .cace-grid-item__title,
+    .cace-grid-item__txt{color: $clr-txt-white;}
+  }
+  &__main{
+    position: relative;
+    z-index: 2;
+    padding: 32px 32px 24px;
+    height: 100%;
+  }
+  &__title{
+    text-transform: uppercase;
+    min-height: 88px;
+    margin-bottom: 16px;
+    font-family: $font-pairings;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: $clr-title;
+    transition: color .25s;
+  }
+  &__txt{
+    min-height: 128px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $clr-txt;
+    transition: color .25s;
+  }
+  @media only screen and (max-width : 1023px){
+    margin: 16px 0 0 0;
+    width: calc(50% - 8px);
+    &__main{padding: 32px 16px;}
+    &__title{
+      min-height: unset;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+    &__txt{
+      min-height: unset;
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    margin-top: 8px;
+    width: 100%;
+  }
+}

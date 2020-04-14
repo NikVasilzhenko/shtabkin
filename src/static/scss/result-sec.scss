@@ -1,0 +1,50 @@
+.result-sec{
+  .sec-title{margin-bottom: 40px;}
+  &__wrap{@include flex-center-start;}
+  &__pic{width: 312px;}
+  ul{
+    width: calc(100% - 312px - 72px);
+    padding-left: 72px;
+    li{
+      margin-bottom: .5em;
+      position: relative;
+      padding-left: 24px;
+      font-size: 20px;
+      line-height: 1.6;
+      color: $clr-txt;
+      &:before{
+        content: '';
+        display: block;
+        background: url(../img/svg/arrow-bulet_green.svg) center center no-repeat;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+      &:last-child{margin-bottom: 0;}
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    .sec-title{margin-bottom: 30px;}
+    &__wrap{align-items: flex-start;}
+    &__pic{width: 216px;}
+    ul{
+      width: calc(100% - 216px - 32px);
+      padding-left: 32px;
+      li{
+        font-size: 18px;
+        &:before{top: 6px;}
+      }
+    }
+  }
+  @media only screen and (max-width : 767px){
+    .sec-title{margin-bottom: 24px;}
+    &__wrap{display: block;}
+    &__pic{display: none;}
+    ul{
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
