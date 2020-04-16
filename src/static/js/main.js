@@ -144,7 +144,7 @@ $(document).ready(function () {
     let tarrifsWrap = $(this).siblings('.js-tarrifs');
     let tarrifsSlideWidth = 258;
     let tarrifsScrollPos = tarrifsWrap[0].scrollLeft;
-    let tarrifsScrollParts = Math.floor((tarrifsScrollPos) / tarrifsSlideWidth);
+    let tarrifsScrollParts = Math.round((tarrifsScrollPos) / tarrifsSlideWidth);
     let tarrifsScrollMoov = tarrifsScrollParts * tarrifsSlideWidth - tarrifsSlideWidth;
     $(this).siblings('.js-tarrifs').animate({ scrollLeft: tarrifsScrollMoov}, 250);
   });
