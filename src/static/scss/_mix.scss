@@ -29,6 +29,11 @@
   align-items: stretch;
   justify-content: flex-start;
 }
+@mixin flex-stretch-center{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
 @mixin flex-stretch-between{
   display: flex;
   align-items: stretch;

@@ -1,6 +1,12 @@
 .main-sec{
-  background: url(../img/pic/main-sec/main-bg.jpg) center center no-repeat;
-  background-size: cover;
+  &_advertising{
+    background: url(../img/pic/main-sec/advertising-bg.png) center bottom no-repeat;
+    background-size: 1920px auto;
+  }
+  &_index{
+    background: url(../img/pic/main-sec/main-bg.jpg) center center no-repeat;
+    background-size: cover;
+  }
   &__wrap{
     height: 664px;
     padding-top: 64px;
@@ -14,6 +20,58 @@
     margin-left: -9px;
     width: 313px;
     @include flex-end-center;
+    &_advertising{
+      margin-left: 40px;
+      width: 456px;
+      transform: translateX(-50%);
+      .main-sec__pic-figcaption{
+        z-index: 2;
+        bottom: 88px;
+        right: -56px;
+      }
+    }
+    &-figcaption{
+      position: absolute;
+      display: block;
+      padding: 7px 16px 7px 14px;
+      text-align: right;
+      box-shadow: $shd-main;
+      background-color: $clr-white;
+      font-size: 14px;
+      line-height: 1.6;
+      color: $clr-title;
+      white-space: nowrap;
+      span{
+        display: block;
+        font-size: 8px;
+        line-height: 1.6;
+        color: $clr-grey-dark;
+      }
+    }
+    &-quote{
+      position: absolute;
+      background: url(../img/svg/quotes.svg) 16px 16px no-repeat $clr-title;
+      color: $clr-txt-white;
+      padding: 20px 40px 20px 64px;
+      font-family: $font-pairings;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.6;
+      width: 328px;
+      top: 24px;
+      right: -224px;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 19px;
+        left: -12px;
+        border-bottom: 12px solid $clr-title;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+    }
   }
   &__content{
     position: relative;
@@ -29,7 +87,7 @@
   }
   &__list{
     margin-bottom: 47px;
-    max-width: 370px;
+    max-width: 405px;
     li{
       position: relative;
       padding-left: 48px;
@@ -45,8 +103,7 @@
         width: 32px;
         height: 32px;
         border-radius: 50%;
-        background: url(../img/svg/check_white.svg) center center no-repeat $clr-green;
-        background-size: 100% 100%;
+        background: url(../img/svg/check-bulet.svg) center center no-repeat $clr-green;
         border: 2.5px solid $clr-white;
         box-shadow: $shd-boolet;
         position: absolute;
@@ -55,14 +112,25 @@
       }
     }
   }
-  &__bar{@include flex-center-between;}
+  &__bar{@include flex-center-start;}
   &__btn{
     width: 240px;
     max-width: 50%;
+    margin-right: 32px;
+  }
+  &__tarrif{
+    display: inline-block;
+    height: 64px;
+    padding: 7px 0 7px 64px;
+    background: url(../img/svg/file_blue.svg) 0 center no-repeat;
+    color: $clr-link;
+    line-height: 1.6;
+    &:hover{text-decoration: underline;}
   }
   &__video{
     padding-left: 76px;
     position: relative;
+    z-index: 4;
     font-size: 16px;
     line-height: 1.6;
     color: $clr-grey-dark;
@@ -104,18 +172,40 @@
     }
   }
   @media only screen and (max-width : 1023px){
+    &_advertising{
+      background-position: -510px bottom;
+      background-size: 1650px auto;
+    }
     &__wrap{
       height: 608px;
       padding-top: 112px;
     }
     &__pic{
       margin-left: -19px;
-      width: 266px;
+      width: 232px;
+      &_advertising{
+        margin-left: 0;
+        left: 227px;
+        width: 373px;
+        transform: none;
+        .main-sec__pic-figcaption{display: none;}
+      }
+      &-quote{
+        background-position: 15px 15px;
+        background-size: 40px auto;
+        padding: 18px 24px 18px 46px;
+        font-size: 14px;
+        width: 231px;
+        top: 50px;
+        right: -126px;
+        &:before{bottom: 15px;}
+      }
     }
     &__title{
       margin-bottom: 30px;
       font-size: 38px;
       line-height: 1.26;
+      text-align: left;
     }
     &__list{
       margin-bottom: 32px;
@@ -133,11 +223,25 @@
     &__btn{
       width: 100%;
       max-width: 100%;
+      margin: 0;
+    }
+    &__tarrif{
+      height: 48px;
+      line-height: 48px;
+      padding: 0 0 0 48px;
+      background-size: 48px auto;
+      margin-top: 24px;
+      br{display: none;}
     }
     &__video{
       font-size: 14px;
       width: 212px;
       margin: 20px auto;
+      text-align: left;
+      &_absolute{
+        margin-top: 80px;
+        margin-left: -5px;
+      }
     }
     &__serts{
       width: 136px;
@@ -151,8 +255,24 @@
     }    
   }
   @media only screen and (max-width : 767px){
-    background: url(../img/pic/main-sec/main-bg.jpg) right bottom no-repeat, linear-gradient(to top, #edf5fa, #ffffff);
-    background-size: auto 664px,  cover;
+    &_index{
+      background: url(../img/pic/main-sec/main-bg.jpg) right bottom no-repeat, linear-gradient(to top, #edf5fa, #fff);
+      background-size: auto 664px,  cover;
+    }
+    &_advertising{
+      background: url(../img/pic/main-sec/advertising-bg.png) -606px bottom no-repeat, linear-gradient(to top, #edf5fa, #fff);
+      background-size: auto 401px,  cover;
+      .main-sec__wrap{padding-bottom: 296px;}
+      .main-sec__pic-figcaption{
+        bottom: 8px;
+        right: auto;
+        left: 135px;
+        display: block;
+        font-size: 12px;
+        padding: 5px 6px 5px 12px;
+        span{font-size: 6px;}
+      }
+    }
     &__wrap{
       height: auto;
       padding-top: 112px;
@@ -168,10 +288,43 @@
         height: 100%;
         max-width: unset;
       }
+      &_advertising {
+        height: 271px;
+        left: -50px;
+        figure{height: 100%;}
+      }
+      &-figcaption {
+        display: block;
+      }
+      &-quote {
+        background-position: 12px 12px;
+        background-size: 32px auto;
+        padding: 15px 12px 15px 38px;
+        font-size: 12px;
+        width: 184px;
+        top: 8px;
+        right: auto;
+        left: 180px;
+        &:before{bottom: 12px;}
+      }
     }
     &__content{width: 100%;}
-    &__bar{max-width: 100%;}
-    &__video{margin-top: 38px;}
+    &__bar{
+      max-width: 100%;
+      text-align: center;
+    }
+    &__video{
+      margin-top: 38px;
+      &_absolute{
+        margin: 0;
+        top: auto;
+        left: auto;
+        right: 8px;
+        bottom: 101px;
+        position: absolute;
+        width: 163px;
+      }
+    }
     &__serts{
       position: absolute;
       right: 0;

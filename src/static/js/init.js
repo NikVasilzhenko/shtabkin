@@ -71,7 +71,7 @@ $(document).ready(function () {
     ]
   });
   
-  //docs-sec-slider     
+  //article slider     
   $('.js-article-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -86,6 +86,28 @@ $(document).ready(function () {
         }
       }
     ]
-  });
+  });  
   
+  //diag slider     
+  $('#js-diag-sec-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 1239,
+        settings: {
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
+  });
 });

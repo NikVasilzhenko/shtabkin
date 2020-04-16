@@ -1,0 +1,117 @@
+.quote-sec{
+  &_1{margin-top: 64px;}
+  &_2{margin-top: 32px;}
+  &_3{margin-top: 40px;}
+  &__wrap{@include flex-center-between;}
+  &__ava{
+    width: 136px;
+    min-width: 136px;
+    height: 136px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    &_1{img{width: 93px;}}
+    &_2{img{width: 112px;}}
+    &_3{img{width: 120px;}}
+  }
+  &__minus{
+    width: 344px;
+    min-width: 344px;
+    position: relative;
+    padding: 21px 32px 17px 56px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $clr-title;
+    background-color: $clr-bg;
+    margin-right: 56px;
+    &:before,&:after{
+      content: '';
+      display: block;
+      position: absolute;
+    }
+    &:before{
+      width: 16px;
+      height: 4px;
+      background-color: $clr-act;
+      left: 24px;
+      top: 28px;
+    }
+    &:after{
+      top: 36px;
+      left: -12px;
+      border-bottom: 12px solid $clr-bg;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
+  }
+  &__frame{
+    padding: 10px 44px;
+    font-family: $font-pairings;
+    font-weight: bold;
+    line-height: 1.6;
+    color: $clr-grey-dark;
+    &_question{background: url(../img/svg/question.svg) 8px 0 no-repeat;}
+    &_qote{background: url(../img/svg/quotes_light.svg) 0 5px no-repeat;}
+  }
+  @media only screen and (max-width : 1023px){
+    &_1{margin-top: 42px;}
+    &_2{margin-top: 32px;}
+    &_3{margin-top: 40px;}
+    &__ava{
+      width: 128px;
+      min-width: 128px;
+      height: 88px;
+      margin-right: 16px;
+      &_1{img{width: 72px;}}
+      &_2{img{width: 88px;}}
+      &_3{img{width: 72px;}}
+    }
+    &__minus{
+      width: 232px;
+      min-width: 232px;
+      padding: 12px 16px 12px 24px;
+      font-size: 12px;
+      margin-right: 32px;
+      &:before{
+        width: 8px;
+        height: 2px;
+        left: 12px;
+        top: 21px;
+      }
+      &:after{top: 28px;}
+    }
+    &__frame{
+      padding: 16px 40px;
+      font-size: 14px;
+      &_question{background-position: 0 4px; background-size: 59px auto;}
+      &_qote{background-position: 8px 7.5px;}
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &_1{display: none;}
+    &_2{display: none;}
+    &_3{margin-top: 32px;}
+    &__wrap{
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    &__ava{
+      width: 72px;
+      min-width: 72px;
+      height: 72px;
+      &_3{img{width: 100%;}}
+    }
+    &__minus{
+      width: calc(100% - 72px - 16px);
+      min-width: unset;
+      margin: 0 0 24px;
+      padding: 12px 16px 12px 24px;
+    }
+    &__frame{
+      width: 100%;
+      padding: 8px 0 0 40px;
+      &_question{background-position: 0 0;}
+    }
+  }
+}

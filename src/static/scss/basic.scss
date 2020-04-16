@@ -292,6 +292,7 @@ img{
   &_name{background-image: url(../img/svg/user.svg);}
   &_tel{background-image: url(../img/svg/tel_input.svg);}
   &_address{background-image: url(../img/svg/address_input.svg);}
+  &_mail{background-image: url(../img/svg/mail_input.svg);}
   &:hover{border-color: $clr-grey;}
   &.value,
   &.focused{

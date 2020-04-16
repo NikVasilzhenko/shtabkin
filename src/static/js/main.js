@@ -102,4 +102,50 @@ $(document).ready(function () {
     }
   });
   
+  /*тарифы*/
+  $('.js-tarrifs-btn').on('click', function(){
+    if($(this).hasClass('open')){
+      $(this).removeClass('open').find('span').text('ПОКАЗАТЬ СПИСОК РАБОТ');
+      $(this).closest('.js-tarrifs').find('.js-tarrifs-col-hide').slideUp(250);
+    } else{
+      $(this).addClass('open').find('span').text('СВЕРНУТЬ СПИСОК РАБОТ');
+      $(this).closest('.js-tarrifs').find('.js-tarrifs-col-hide').slideDown(250);
+    }
+  });
+  function setButtonPosition(){  
+    if($(window).width() < 768){
+      let left = -($('.js-tarrifs-btn').offset().left) + ($(window).width() / 2);
+      $('.js-tarrifs-btn span').css('left', left + 'px');
+    } else{
+      $('.js-tarrifs-btn span').attr('style', '');
+    }
+  }
+  function setButtonPositionThis($this){ 
+    let left = -($this.find('.js-tarrifs-btn').offset().left) + ($(window).width() / 2);
+    $this.find('.js-tarrifs-btn span').css('left', left + 'px');
+  }
+  setButtonPosition();
+  $('.js-tarrifs').on('scroll', function(){
+    setButtonPositionThis($(this));
+  });
+  $(window).on('resize', function(){
+    setButtonPosition();
+  });
+  
+  $('.js-tarrifs-arrow-next').on('click', function(){
+    let tarrifsWrap = $(this).siblings('.js-tarrifs');
+    let tarrifsSlideWidth = 258;
+    let tarrifsScrollPos = tarrifsWrap[0].scrollLeft;
+    let tarrifsScrollParts = Math.floor((tarrifsScrollPos) / tarrifsSlideWidth);
+    let tarrifsScrollMoov = tarrifsScrollParts * tarrifsSlideWidth + tarrifsSlideWidth;
+    $(this).siblings('.js-tarrifs').animate({ scrollLeft: tarrifsScrollMoov}, 250);
+  });
+  $('.js-tarrifs-arrow-prev').on('click', function(){
+    let tarrifsWrap = $(this).siblings('.js-tarrifs');
+    let tarrifsSlideWidth = 258;
+    let tarrifsScrollPos = tarrifsWrap[0].scrollLeft;
+    let tarrifsScrollParts = Math.floor((tarrifsScrollPos) / tarrifsSlideWidth);
+    let tarrifsScrollMoov = tarrifsScrollParts * tarrifsSlideWidth - tarrifsSlideWidth;
+    $(this).siblings('.js-tarrifs').animate({ scrollLeft: tarrifsScrollMoov}, 250);
+  });
 });

@@ -1,0 +1,120 @@
+.steps-sec{
+  &__wrap{@include flex-start-between;}
+  &__form{width: 440px;}
+  &__steps{width: calc(100% - 440px - 64px);}
+  .sec-title{margin-bottom: 20px;}
+  @media only screen and (max-width : 1023px){
+    &__form{
+      width: 288px;
+      padding-top: 60px;
+      .form__footer{
+        display: block;
+        &>*{width: 100%;}
+      }
+    }
+    &__steps{width: calc(100% - 288px - 30px);}
+    .sec-title{
+      margin-bottom: 24px;
+      max-width: 288px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__wrap{display: block;}
+    &__form{
+      width: 100%;
+      padding-top: 32px;
+      .form{padding-bottom: 24px;}
+    }
+    &__steps{width: 100%;}
+    .sec-title{margin-bottom: 24px;}
+  }
+}
+.steps-item{
+  padding-bottom: 16px;  
+  position: relative;
+  @include flex-start-between;
+  &:before,&:after{
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  &:before{
+    width: 2px;
+    height: calc(100% - 80px - 10px);
+    border-left: 2px dashed $clr-brd;
+    top: 80px;
+    left: 40px;
+  }
+  &:after{
+    background: url(../img/svg/steps-sec/arrow.svg) center center no-repeat;
+    width: 12px;
+    height: 10px;
+    bottom: 0;
+    left: 35px;
+  }
+  &__icn{width: 80px;}
+  &__main{
+    width: calc(100% - 80px - 16px);
+    padding-top: 22px;
+    ul{
+      li{
+        line-height: 1.6;
+        margin-bottom: 1em;
+        padding-left: 14px;
+        position: relative;
+        &:last-child{margin-bottom: 0;}
+        &:before{
+          content: '';
+          display: block;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: $clr-grey;
+          position: absolute;
+          left: 0;
+          top: 8px;
+        }
+        span{
+          color: $clr-txt-white;
+          background-color: $clr-txt;
+          padding: 3px;
+          margin-left: -3px;
+        }
+      }
+    }
+  }
+  &__title{
+    @include h3;
+    margin-bottom: 16px;
+  }
+  &:last-child{
+    padding-bottom: 0;
+    &:before,&:after{
+      display: none;
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    width: calc(100% + 8px);
+    margin-left: -8px;
+    &__main{
+      ul{
+        li{font-size: 14px;}
+      }
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding-bottom: 24px;
+    &:before{
+      height: calc(100% - 56px - 12px);
+      top: 56px;
+      left: 28px;
+    }
+    &:after{left: 23px;}
+    &__icn{width: 56px;}
+    &__main{
+      width: calc(100% - 56px - 8px);
+      padding-top: 16px;
+    }
+    &__title{margin-bottom: 10px;}
+  }
+}
