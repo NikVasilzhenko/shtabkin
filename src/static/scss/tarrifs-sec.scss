@@ -18,14 +18,15 @@
       margin-left: -16px;
       overflow-x: auto; 
     }
-    &__container{position: relative;}
+    &__container{position: relative;}    
     &__arrow{
+      opacity: 0;
       position: absolute;
-      top: 152px;
+      margin-bottom: 9px;
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      z-index: 5;
+      z-index: 10;
       box-shadow: $shd-btn;
       background: url(../img/svg/arrow-prev.svg) center center no-repeat $clr-white;
       &_prev{left: -8px;}
@@ -83,9 +84,17 @@
   &__col{
     border-right: solid 1px $clr-brd;    
     padding: 0 16px;
+    &_1-5{
+      width: 20%;
+      min-width: 20%;
+    }
     &_1-4{
       width: 25%;
       min-width: 25%;
+    }
+    &_1-3{
+      width: calc(100% / 3);
+      min-width: calc(100% / 3);
     }
     &_1-2{
       width: 50%;
@@ -198,15 +207,23 @@
       width: 517px;
       margin: 0 auto;
     }
+    &-overlay_1-3{
+      width: 767px;
+      margin: 0 auto;
+    }
   }
   @media only screen and (max-width : 767px){
     &-overlay{
       padding: 0 16px;
       width: auto;
+      &_1-5{width: calc(258px * 5 + 32px);}
       &_1-4{width: calc(258px * 4 + 32px);}
+      &_1-3{width: calc(258px * 3 + 32px);}
       &_1-2{width: calc(258px * 2 + 32px);}
     }
+    &__col_1-5,
     &__col_1-4,
+    &__col_1-3,
     &__col_1-2,
     &__col{
       width: 258px;
@@ -221,5 +238,6 @@
         margin-left: -16px;
       }
     }
+    &__middle{position: relative;}
   }
 }

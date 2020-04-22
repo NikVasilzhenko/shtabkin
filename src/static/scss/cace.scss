@@ -42,6 +42,7 @@
       padding-top: 60.78%;
       background: center center no-repeat;
       background-size: cover;
+      cursor: pointer;      
       &:after{
         content: '';
         display: block;
@@ -51,7 +52,13 @@
         border-radius: 50%;
         background: url(../img/svg/play-red.svg) center center no-repeat $clr-white;
         box-shadow: 0 0 0 6px rgba(255, 255, 255, .2);
-        cursor: pointer;
+        transition: background-color .25s;
+      }
+      &:hover{
+        &:after{
+          background-image: url(../img/svg/play-white.svg);
+          background-color: $clr-act;
+        }
       }
     }
     &-txt{

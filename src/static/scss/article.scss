@@ -224,6 +224,14 @@
             color: $clr-grey-dark;
             font-family: $font-main;
             border-bottom: 1px dashed $clr-grey-dark;
+            transition: .25s;
+          }
+          &:hover{
+            color: $clr-link;
+            span{
+              color: $clr-link;
+              border-bottom-color: transparent;
+            }
           }
         }
       }

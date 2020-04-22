@@ -76,6 +76,7 @@ gulp.task('vendors', function(){
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/slick-carousel/slick/slick.min.js',
+    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
     'node_modules/jquery-colorbox/jquery.colorbox-min.js'
   ])
     .pipe(concat('vendors.min.js'))

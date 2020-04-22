@@ -110,4 +110,7 @@ $(document).ready(function () {
       }
     ]
   });
+  
+  //maskedinput
+  $('.input_tel').mask("+7 (999) 999-9999");
 });

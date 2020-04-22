@@ -1,4 +1,4 @@
-<div class="popup js-popup" style="display: block;">
+<div class="popup js-popup" id="js-popup-order">
   <div class="popup__overlay js-popup-close"></div>
   <form action="#" method="post" class="popup__wrap popup__wrap_order">
     <button class="btn btn_close popup__close js-popup-close" type="button" title="Закрыть"></button>
@@ -9,7 +9,7 @@
     </label>
     <label class="label label_tel">
       <span class="label__name">Телефон</span>
-      <input type="tel" class="input input_tel js-input" onfocus="addClassFocused(this);addTelPrefix(this);" onblur="removeClassFocused(this);" oninput="addClassValue(this);">
+      <input type="text" class="input input_tel js-input" onfocus="addClassFocused(this);" onblur="removeClassFocused(this);" oninput="addClassValue(this);">
     </label>
     <label class="label label_address">
       <span class="label__name">Адрес сайта</span>

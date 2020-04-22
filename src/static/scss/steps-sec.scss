@@ -1,15 +1,32 @@
 .steps-sec{
-  &__wrap{@include flex-start-between;}
-  &__form{width: 440px;}
+  &__wrap{@include flex-stretch-between;}
+  &__form{
+    width: 440px;
+    position: relative;
+    .form{
+      &.fix{
+        position: fixed;
+        top: 104px;
+        width: 440px;
+      }
+      &.stop{
+        position: absolute;
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
   &__steps{width: calc(100% - 440px - 64px);}
   .sec-title{margin-bottom: 20px;}
   @media only screen and (max-width : 1023px){
     &__form{
       width: 288px;
-      padding-top: 60px;
       .form__footer{
         display: block;
         &>*{width: 100%;}
+      }
+      .form{
+        &.fix{width: 288px;}
       }
     }
     &__steps{width: calc(100% - 288px - 30px);}

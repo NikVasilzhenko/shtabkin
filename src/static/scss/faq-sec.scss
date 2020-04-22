@@ -49,6 +49,13 @@
       font-weight: 400;
       border-bottom: 1px dotted $clr-txt;
     }
+    &:hover{
+      &:before{background: url(../img/svg/chevrone-down_white.svg) center center no-repeat $clr-link-hover;}
+      span{
+        color: $clr-link-hover;
+        border-color: transparent;
+      }
+    }
     &.open{
       &:before{background: url(../img/svg/chevrone-up_white.svg) center center no-repeat $clr-link-hover;}
       span{

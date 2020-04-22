@@ -1,7 +1,10 @@
 .sub-service{
   &__title{margin-bottom: 20px;}
-  &__wrap{@include flex-start-between;}
-  &__bar{width: 224px;}
+  &__wrap{@include flex-stretch-between;}
+  &__bar{
+    width: 224px;
+    position: relative;
+  }
   &__main{
     width: calc(100% - 224px - 40px);
     max-width: unset;
@@ -28,6 +31,16 @@
         }
       }
     }
+    &.fix{
+      position: fixed;
+      top: 104px;
+      width: 224px;
+    }
+    &.stop{
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
   }
   @media only screen and (max-width : 1023px){
     &__wrap{display: block;}
@@ -35,6 +48,13 @@
     &__bar{
       width: 100%;
       margin-top: 32px;
+    }
+    &-nav{
+      &.fix{
+        position: static;
+        width: 100%;
+      }
+      &.stop{position: static;}
     }
   }
   @media only screen and (max-width : 767px){

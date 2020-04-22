@@ -221,7 +221,10 @@ body{
     margin-top: -24px;
     box-shadow: $shd-btn;
     background: url(../img/svg/arrow-prev.svg) center center no-repeat $clr-white;
-    &:hover{box-shadow: $shd-btn-hover;}
+    &:hover{
+      background: url(../img/svg/arrow-prev_white.svg) center center no-repeat $clr-act;
+      box-shadow: 0 0 0 0 rgba(70, 107, 158, 0);
+    }
   }
   .slick-prev{left: 0;}
   .slick-next{
@@ -451,7 +454,20 @@ img{
     border-radius: 50%;
     font-size: 0;
     background: center center no-repeat $clr-bg;
-    &_vk{background-image: url(../img/svg/vk_color.svg);}
-    &_youtube{background-image: url(../img/svg/youtube_color.svg);}
+    &_vk{
+      background-image: url(../img/svg/vk_color.svg);
+      &:hover{
+        background-image: url(../img/svg/vk_white.svg);
+        background-color: #4a76a8;
+      }
+    }
+    &_youtube{
+      background-image: url(../img/svg/youtube_color.svg);
+      &:hover{
+        background-image: url(../img/svg/youtube_white.svg);
+        background-color: #ff2e00
+;
+      }
+    }
   }
 }

@@ -4,8 +4,8 @@
     background-size: 1920px auto;
   }
   &_index{
-    background: url(../img/pic/main-sec/main-bg.jpg) center center no-repeat;
-    background-size: cover;
+    background: url(../img/pic/main-sec/main-bg.png) center center no-repeat;
+    background-size: 1920px auto;
   }
   &__wrap{
     height: 664px;
@@ -147,7 +147,14 @@
       margin-top: -30px;
       border: 6px solid $clr-play-btn-brd;
       box-shadow: $shd-btn;
+      transition: background-color .25s;
       background: url(../img/svg/play-red.svg) center center no-repeat $clr-white;
+    }
+    &:hover{
+      &:before{
+        background-image: url(../img/svg/play-white.svg);
+        background-color: $clr-act;
+      }
     }
   }
   &__serts{
@@ -170,6 +177,10 @@
       margin-bottom: 16px;
       box-shadow: $shd-main;
     }
+  }
+  @media only screen and (min-width : 1920px){
+    &_advertising,
+    &_index{background-size: cover;}
   }
   @media only screen and (max-width : 1023px){
     &_advertising{
